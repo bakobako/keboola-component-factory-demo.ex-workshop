@@ -52,7 +52,7 @@ class Component(ComponentBase):
         logging.info(previous_state.get('some_state_parameter'))
 
         # Create output table (Tabledefinition - just metadata)
-        table = self.create_out_table_definition('output.csv', incremental=True, primary_key=['timestamp'])
+        table = self.create_out_table_definition('output2.csv', incremental=True, primary_key=['timestamp'])
 
         # get file path of the table (data/out/tables/Features.csv)
         out_table_path = table.full_path
