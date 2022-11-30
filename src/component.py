@@ -70,6 +70,8 @@ class Component(ComponentBase):
         # Write new state - will be available next run
         self.write_state_file({"some_state_parameter": "value"})
 
+        logging.warning("WARNING HERE : something")
+
         # ####### EXAMPLE TO REMOVE END
 
 
