@@ -72,6 +72,8 @@ class Component(ComponentBase):
 
         logging.warning("WARNING HERE : something")
 
+        logging.error('heya', extra={"key": "value"})
+
         raise UserException("it failed")
 
         # ####### EXAMPLE TO REMOVE END
